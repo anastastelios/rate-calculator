@@ -1,0 +1,26 @@
+.exchange_icon {
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.base_currency {
+    display: inline-block;
+}
+
+.exchange_currency {
+    display: inline-block;
+}
+
+.convert_btn {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.rate_calculator {
+    margin-bottom: 0.7rem;
+}
+
+.invert_sign {
+    display: inline-block;
+}

@@ -1,0 +1,11 @@
+.invert_btn {
+    width: 8vh;
+    height: calc(8vh - 0.5rem);
+    margin: auto;
+    border-radius: 25%;
+    border: none;
+    font-size: 1.5rem;
+    background-color: #FA6900;
+    color: white;
+    cursor: pointer;
+}
