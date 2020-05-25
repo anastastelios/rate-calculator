@@ -5,7 +5,7 @@
     border-radius: 25%;
     border: none;
     font-size: 1.5rem;
-    background-color: #FA6900;
+    background-color: #A6622E;
     color: white;
     cursor: pointer;
     box-shadow: 3px 3px 2px 1px #803e00;
@@ -17,7 +17,7 @@
 
 .operator_btn:active {
     box-shadow: none;
-    background-color: #F38630;
+    background-color: #EB904A;
 }
 
 .cancel_btn {

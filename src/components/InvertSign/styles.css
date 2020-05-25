@@ -5,13 +5,13 @@
     border-radius: 25%;
     border: none;
     font-size: 1.5rem;
-    background-color: #FA6900;
+    background-color: #A6622E;
     color: white;
     cursor: pointer;
     box-shadow: 3px 3px 2px 1px #803e00;
 }
 
 .invert_btn:active {
-    border: 1px solid black;
-    background-color: #F38630;
+    box-shadow: none;
+    background-color: #EB904A;
 }
