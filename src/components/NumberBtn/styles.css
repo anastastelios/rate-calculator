@@ -30,7 +30,8 @@
         border-radius: 25%;
         border: none;
         font-size: 1.5rem;
-        background-color: #69D2E7;
+        background-color: #cbcfcd;
+        box-shadow: 3px 3px 2px 1px #d6d3d3;
         cursor: pointer;
     }
 }
@@ -44,7 +45,8 @@
         border-radius: 25%;
         border: none;
         font-size: 1.5rem;
-        background-color: #69D2E7;
+        background-color: #cbcfcd;
+        box-shadow: 3px 3px 2px 1px #d6d3d3;
         cursor: pointer;
     }
 }
@@ -58,7 +60,8 @@
         border-radius: 25%;
         border: none;
         font-size: 1.5rem;
-        background-color: #69D2E7;
+        background-color: #cbcfcd;
+        box-shadow: 3px 3px 2px 1px #d6d3d3;
         cursor: pointer;
     }
 }

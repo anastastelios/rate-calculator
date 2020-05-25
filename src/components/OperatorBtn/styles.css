@@ -30,7 +30,7 @@
     background-color: #c94730;
     color: white;
     cursor: pointer;
-    box-shadow: 3px 3px 2px 1px rgb(167, 16, 16);
+    box-shadow: 3px 3px 2px 1px #a71010;
 }
 
 .cancel_btn:active {
