@@ -10,6 +10,8 @@
 .panels_container {
     margin-top: 0.2rem;
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 @media (max-aspect-ratio: 4/7) {
