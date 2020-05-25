@@ -38,7 +38,7 @@ const NumberBtn = (props) => {
                 if (props.operatorGetter === '') {
                     if (prevState === '0') {
                         return e.target.value;
-                    } else if (prevState.split('').length > 18) {
+                    } else if (prevState.split('').length > 17) {
                         return prevState;
                     } else if (e.target.value === '.') {
                         if (prevState.indexOf('.') < 0) {
