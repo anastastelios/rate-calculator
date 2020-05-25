@@ -13,7 +13,7 @@ const Calculator = () => {
             .then(response => response.json())
             .then(data => {
                 const rate = data.rates[`${exchangeCurrency}`]
-                setRate(rate)
+                setRate(baseCurrency === exchangeCurrency ? 1 : rate)
                 return rate
             })
     }

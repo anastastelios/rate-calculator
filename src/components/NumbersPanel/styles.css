@@ -4,7 +4,7 @@
     width: 42vh;
     height: 56vh;
     margin-left: 0.3rem;
-    background-color: #E0E4CC;
+    background-color: #ffffff;
 }
 
 @media (max-aspect-ratio: 4/7) {
@@ -14,7 +14,7 @@
         width: 36vh;
         height: 56vh;
         margin-left: 2rem;
-        background-color: #E0E4CC;
+        background-color: #ffffff;
     }
 }
 
@@ -25,6 +25,6 @@
         width: 33vh;
         height: 56vh;
         margin-left: 2rem;
-        background-color: #E0E4CC;
+        background-color: #ffffff;
     }
 }

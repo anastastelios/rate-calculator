@@ -4,7 +4,7 @@
     border: 1px solid black;
     margin-left: calc((100vw - 60vh)/2);
     margin-top: 10vh;
-    background-color: #E0E4CC;
+    background-color: #ffffff;
 }
 
 .panels_container {
@@ -20,7 +20,7 @@
         width: 56vh;
         border: 1px solid black;
         margin-top: 10vh;
-        background-color: #E0E4CC;
+        background-color: #ffffff;
     }
 }
 
@@ -30,7 +30,7 @@
         width: 54vh;
         border: 1px solid black;
         margin-top: 10vh;
-        background-color: #E0E4CC;
+        background-color: #ffffff;
     }
 }
 
@@ -40,6 +40,6 @@
         width: 58vh;
         border: 1px solid black;
         margin-top: 10vh;
-        background-color: #E0E4CC;
+        background-color: #ffffff;
     }
 }

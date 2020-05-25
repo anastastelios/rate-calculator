@@ -5,10 +5,10 @@
     border-radius: 25%;
     border: none;
     font-size: 1.5rem;
-    background-color: #A6622E;
+    background-color: #849694;
     color: white;
     cursor: pointer;
-    box-shadow: 3px 3px 2px 1px #803e00;
+    box-shadow: 3px 3px 2px 1px #818686;
 }
 
 .invert_btn:active {

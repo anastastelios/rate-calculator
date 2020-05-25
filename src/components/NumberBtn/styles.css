@@ -6,9 +6,9 @@
     border-radius: 25%;
     border: none;
     font-size: 2rem;
-    background-color: #308882;
+    background-color: #cbcfcd;
     cursor: pointer;
-    box-shadow: 3px 3px 2px 1px #008080;
+    box-shadow: 3px 3px 2px 1px #d6d3d3;
 }
 
 .number_btn:focus {
