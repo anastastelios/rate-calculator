@@ -38,7 +38,7 @@ const NumberBtn = (props) => {
                 if (props.operatorGetter === '') {
                     if (prevState === '0') {
                         return e.target.value;
-                    } else if (prevState.split('').length > 17) {
+                    } else if (prevState.split('').length > 15) {
                         return prevState;
                     } else if (e.target.value === '.') {
                         if (prevState.indexOf('.') < 0) {
@@ -51,6 +51,8 @@ const NumberBtn = (props) => {
                     }
                 } else if (props.lastBtnGetter === 'O') {
                     return e.target.value;
+                } else if (prevState.split('').length > 15) {
+                    return prevState;
                 } else {
                     return prevState + e.target.value;
                 }
