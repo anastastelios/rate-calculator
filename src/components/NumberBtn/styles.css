@@ -8,6 +8,7 @@
     font-size: 2rem;
     background-color: #69D2E7;
     cursor: pointer;
+    box-shadow: 3px 3px 2px 1px teal;
 }
 
 .number_btn:focus {
@@ -16,7 +17,7 @@
 }
 
 .number_btn:active {
-    border: 1px solid black;
+    box-shadow: none;
     background-color: #A7DBD8;
 }
 

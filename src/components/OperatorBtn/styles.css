@@ -8,6 +8,7 @@
     background-color: #FA6900;
     color: white;
     cursor: pointer;
+    box-shadow: 3px 3px 2px 1px #803e00;
 }
 
 .operator_btn:focus, .cancel_btn:focus {
@@ -15,7 +16,7 @@
 }
 
 .operator_btn:active {
-    border: 1px solid black;
+    box-shadow: none;
     background-color: #F38630;
 }
 
@@ -29,9 +30,10 @@
     background-color: #c94730;
     color: white;
     cursor: pointer;
+    box-shadow: 3px 3px 2px 1px rgb(167, 16, 16);
 }
 
 .cancel_btn:active {
     background-color: #db381b;
-    border: 1px solid black
+    box-shadow: none;
 }

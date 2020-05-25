@@ -4,3 +4,13 @@ h2 {
     padding: 0.3rem;
     margin-bottom: 0.5rem;
 }
+
+@media (max-width: 320px) {
+    h2 {
+        background-color: rgb(14, 65, 62);
+        color: white;
+        padding: 0.3rem;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+}

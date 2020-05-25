@@ -44,3 +44,14 @@
         background-color: #E0E4CC;
     }
 }
+
+@media (max-width: 320px) {
+    .calculator_container {
+        height: 94vh;
+        width: 58vh;
+        border: 1px solid black;
+        margin-left: calc((100vw - 60vh)/2);
+        margin-top: 3vh;
+        background-color: #E0E4CC;
+    }
+}

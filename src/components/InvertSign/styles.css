@@ -8,6 +8,7 @@
     background-color: #FA6900;
     color: white;
     cursor: pointer;
+    box-shadow: 3px 3px 2px 1px #803e00;
 }
 
 .invert_btn:active {
