@@ -2,6 +2,14 @@ import React from 'react'
 import './styles.css'
 
 const NumberBtn = (props) => {
+
+    const operators = {
+        '+': function (a, b) { return a + b },
+        '-': function (a, b) { return a - b },
+        'x': function (a, b) { return a * b },
+        '/': function (a, b) { return a / b }
+    }
+
     const handleClick = (e) => {
         if (e.target.value === '=') {
             props.lastBtnSetter('O');
@@ -12,48 +20,25 @@ const NumberBtn = (props) => {
                     props.operatorSetter('=');
                     return prevState;
                 })
-            } else if (props.operatorGetter === '+') {
-                return props.handleCalculation(prevState => {
-                    const newState = (parseFloat(props.curNumberGetter) + parseFloat(prevState)).toString();
-                    props.prevNumberSetter(props.curNumberGetter)
-                    props.curNumberSetter(newState)
-                    props.operatorSetter('=');
-                    return newState
-                })
-            } else if (props.operatorGetter === '-') {
-                return props.handleCalculation(prevState => {
-                    const newState = (parseFloat(props.curNumberGetter) - parseFloat(prevState)).toString();
-                    props.prevNumberSetter(props.curNumberGetter)
-                    props.curNumberSetter(newState)
-                    props.operatorSetter('=');
-                    return newState
-                })
-            } else if (props.operatorGetter === 'x') {
-                return props.handleCalculation(prevState => {
-                    const newState = (parseFloat(props.curNumberGetter) * parseFloat(prevState)).toString();
-                    props.prevNumberSetter(props.curNumberGetter)
-                    props.curNumberSetter(newState)
-                    props.operatorSetter('=');
-                    return newState
-                })
-            } else if (props.operatorGetter === '/') {
-                return props.handleCalculation(prevState => {
-                    const newState = (parseFloat(props.curNumberGetter) / parseFloat(prevState)).toString();
-                    props.prevNumberSetter(props.curNumberGetter)
-                    props.curNumberSetter(newState)
-                    props.operatorSetter('=');
-                    return newState
-                })
             } else if (props.operatorGetter === '=') {
                 return props.handleCalculation(prevState => prevState);
+            } else {
+                return props.handleCalculation(prevState => {
+                    const newState = (operators[props.operatorGetter](parseFloat(props.curNumberGetter), parseFloat(prevState))).toString();
+                    props.prevNumberSetter(props.curNumberGetter)
+                    props.curNumberSetter(newState)
+                    props.operatorSetter('=');
+                    return newState
+                })
             }
+
         } else {
             props.handleCalculation(prevState => {
                 props.lastBtnSetter('N');
                 if (props.operatorGetter === '') {
                     if (prevState === '0') {
                         return e.target.value;
-                    } else if (prevState.split('').length > 17) {
+                    } else if (prevState.split('').length > 20) {
                         return prevState;
                     } else if (e.target.value === '.') {
                         if (prevState.indexOf('.') < 0) {
