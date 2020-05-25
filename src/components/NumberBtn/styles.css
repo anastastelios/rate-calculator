@@ -38,8 +38,8 @@
 @media (max-aspect-ratio: 4/8) {
     .number_btn {
         display: inline-block;
-        width: calc(10vh - 0.5rem);
-        height: calc(10vh - 0.5rem);
+        width: calc(11vh - 0.5rem);
+        height: calc(11vh - 0.5rem);
         margin: auto;
         border-radius: 25%;
         border: none;
@@ -52,8 +52,8 @@
 @media (max-width: 320px) {
     .number_btn {
         display: inline-block;
-        width: calc(10vh - 0.5rem);
-        height: calc(10vh - 0.5rem);
+        width: calc(12vh - 0.5rem);
+        height: calc(12vh - 0.5rem);
         margin: auto;
         border-radius: 25%;
         border: none;
