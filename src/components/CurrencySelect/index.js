@@ -9,6 +9,7 @@ const CurrencySelect = (props) => {
             .then(data => {
                 setCurrencies(Object.keys(data.rates))
             })
+            .catch(err => alert(`The database of the forex rates is not currently available. Please try again later!`))
     }, [])
 
     const currencyChange = (e) => {
@@ -18,15 +19,17 @@ const CurrencySelect = (props) => {
             fetch(`https://api.exchangeratesapi.io/latest?base=${props.baseCurrencyGetter}`)
                 .then(response => response.json())
                 .then(data => {
-                    props.rateSetter(props.exchangeCurrencyGetter === '' ? 1 : data.rates[`${props.exchangeCurrencyGetter}`])
+                    props.rateSetter(data.rates[`${props.exchangeCurrencyGetter}`])
                 })
+                .catch(err => alert(`The database of the forex rates is not currently available. Please try again later!`))
         } else if (props.type === 'exchange') {
             props.exchangeCurrencySetter(e.target.value);
             fetch(`https://api.exchangeratesapi.io/latest?base=${props.baseCurrencyGetter}`)
                 .then(response => response.json())
                 .then(data => {
-                    props.rateSetter(props.baseCurrencyGetter === '' ? 1 : data.rates[`${props.exchangeCurrencyGetter}`])
+                    props.rateSetter(data.rates[`${props.exchangeCurrencyGetter}`])
                 })
+                .catch(err => alert(`The database of the forex rates is not currently available. Please try again later!`))
         }
 
     }

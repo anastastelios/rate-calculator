@@ -21,7 +21,7 @@ const ConverterPanel = (props) => {
                 <CurrencySelect type='base' baseCurrencySetter={props.baseCurrencySetter} baseCurrencyGetter={props.baseCurrencyGetter} exchangeCurrencySetter={props.exchangeCurrencySetter} exchangeCurrencyGetter={props.exchangeCurrencyGetter} rateSetter={props.rateSetter} rateGetter={props.rateGetter} />
             </div>
             <div className='exchange_icon'>
-                <FontAwesomeIcon onClick={invertConversion} icon={faExchangeAlt} />
+                <FontAwesomeIcon onClick={invertConversion} style={{ 'cursor': 'pointer' }} icon={faExchangeAlt} />
             </div>
             <div className='exchange_currency'>
                 <CurrencySelect type='exchange' baseCurrencySetter={props.baseCurrencySetter} baseCurrencyGetter={props.baseCurrencyGetter} exchangeCurrencySetter={props.exchangeCurrencySetter} exchangeCurrencyGetter={props.exchangeCurrencyGetter} rateSetter={props.rateSetter} rateGetter={props.rateGetter} />

@@ -1,11 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './styles.css'
 
 const NumberBtn = (props) => {
-    const [bgColor, setBgColor] = useState('')
     const handleClick = (e) => {
-        setBgColor('#A7DBD8');
-        setTimeout(() => setBgColor(''), 70);
         if (e.target.value === '=') {
             props.lastBtnSetter('O');
             if (props.operatorGetter === "") {
@@ -67,10 +64,6 @@ const NumberBtn = (props) => {
                     } else {
                         return prevState + e.target.value;
                     }
-                } else if (prevState === props.prevNumberGetter && props.prevNumberGetter !== props.curNumberGetter) {
-                    return e.target.value;
-                    // } else if (prevState === props.curNumberGetter) {
-                    //     return prevState + e.target.value;
                 } else if (props.lastBtnGetter === 'O') {
                     return e.target.value;
                 } else {
@@ -81,7 +74,7 @@ const NumberBtn = (props) => {
     }
 
     return (
-        <button onClick={handleClick} style={{ backgroundColor: bgColor }} value={props.number} className='number_btn'>{props.number}</button>
+        <button onClick={handleClick} value={props.number} className='number_btn'>{props.number}</button>
     )
 }
 

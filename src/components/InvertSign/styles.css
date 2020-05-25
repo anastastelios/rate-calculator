@@ -9,3 +9,8 @@
     color: white;
     cursor: pointer;
 }
+
+.invert_btn:active {
+    border: 1px solid black;
+    background-color: #F38630;
+}

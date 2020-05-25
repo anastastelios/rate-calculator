@@ -2,7 +2,7 @@ import React from 'react'
 import './styles.css'
 
 const ConverterBtn = (props) => {
-    const convertRate = async () => {
+    const convertRate = () => {
         props.changeCalculation(prevState => (prevState * props.rateGetter).toString())
     }
 
