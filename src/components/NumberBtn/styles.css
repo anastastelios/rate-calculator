@@ -19,6 +19,7 @@
 .number_btn:active {
     box-shadow: none;
     background-color: #5ebdb6;
+    outline: none;
 }
 
 @media (max-aspect-ratio: 4/7) {

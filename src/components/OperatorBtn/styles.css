@@ -17,6 +17,7 @@
 
 .operator_btn:active {
     box-shadow: none;
+    outline: none;
     background-color: #EB904A;
 }
 
@@ -36,4 +37,5 @@
 .cancel_btn:active {
     background-color: #db381b;
     box-shadow: none;
+    outline: none;
 }
