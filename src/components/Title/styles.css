@@ -1,5 +1,5 @@
 h2 {
-    background-color: #249189;
+    background-color: #337974;
     color: white;
     padding: 0.3rem;
     margin-bottom: 0.5rem;
@@ -7,7 +7,7 @@ h2 {
 
 @media (max-width: 320px) {
     h2 {
-        background-color: #249189;
+        background-color: #337974;
         color: white;
         padding: 0.3rem;
         margin-bottom: 0.5rem;

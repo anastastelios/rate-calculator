@@ -6,9 +6,9 @@
     border-radius: 25%;
     border: none;
     font-size: 2rem;
-    background-color: #cbcfcd;
+    background-color: #c2c2c2;
     cursor: pointer;
-    box-shadow: 3px 3px 2px 1px #b1b0b0;
+    box-shadow: 3px 3px 2px 1px #9d9e9e;
 }
 
 .number_btn:focus {
@@ -31,7 +31,7 @@
         border-radius: 25%;
         border: none;
         font-size: 1.5rem;
-        background-color: #cbcfcd;
+        background-color: #a9adad;
         cursor: pointer;
     }
 }
@@ -45,7 +45,7 @@
         border-radius: 25%;
         border: none;
         font-size: 1.5rem;
-        background-color: #cbcfcd;
+        background-color: #a9adad;
         cursor: pointer;
     }
 }
@@ -59,7 +59,7 @@
         border-radius: 25%;
         border: none;
         font-size: 1.5rem;
-        background-color: #cbcfcd;
+        background-color: #a9adad;
         cursor: pointer;
     }
 }

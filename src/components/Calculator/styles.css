@@ -2,7 +2,7 @@
     height: 82vh;
     width: 58vh;
     border: 1px solid black;
-    margin-left: calc((100vw - 60vh)/2);
+    margin: auto;
     margin-top: 10vh;
     background-color: #ffffff;
 }
@@ -17,7 +17,7 @@
 @media (max-aspect-ratio: 4/7) {
     .calculator_container {
         height: 82vh;
-        width: 56vh;
+        width: 55vh;
         border: 1px solid black;
         margin-top: 10vh;
         background-color: #ffffff;
@@ -27,7 +27,7 @@
 @media (max-aspect-ratio: 4/8) {
     .calculator_container {
         height: 82vh;
-        width: 54vh;
+        width: 50vh;
         border: 1px solid black;
         margin-top: 10vh;
         background-color: #ffffff;
