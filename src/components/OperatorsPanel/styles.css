@@ -1,10 +1,9 @@
 .operators_panel_container {
-    width: 14vh;
+    width: 24%;
     height: 56vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 0.1rem;
     background-color: #ffffff;
 }

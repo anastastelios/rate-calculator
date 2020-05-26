@@ -1,7 +1,7 @@
 .exchange_icon {
     display: inline-block;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .base_currency {
@@ -18,7 +18,7 @@
 }
 
 .rate_calculator {
-    margin-bottom: 0.7rem;
+    margin: auto
 }
 
 .invert_sign {

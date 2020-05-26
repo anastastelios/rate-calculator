@@ -1,6 +1,6 @@
 .operator_btn {
-    width: 8vh;
-    height: calc(8vh - 0.5rem);
+    width: 65%;
+    height: 15%;
     margin: auto;
     border-radius: 25%;
     border: none;
@@ -22,8 +22,8 @@
 }
 
 .cancel_btn {
-    width: 8vh;
-    height: calc(8vh - 0.5rem);
+    width: 65%;
+    height: 15%;
     margin: auto;
     border-radius: 25%;
     border: none;

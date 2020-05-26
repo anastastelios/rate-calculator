@@ -1,7 +1,7 @@
 .number_btn {
     display: inline-block;
-    width: calc(14vh - 0.5rem);
-    height: calc(14vh - 0.5rem);
+    width: 30%;
+    height: 23%;
     margin: auto;
     border-radius: 25%;
     border: none;
@@ -20,46 +20,4 @@
     box-shadow: none;
     background-color: #5ebdb6;
     outline: none;
-}
-
-@media (max-aspect-ratio: 4/7) {
-    .number_btn {
-        display: inline-block;
-        width: calc(12vh - 0.5rem);
-        height: calc(12vh - 0.5rem);
-        margin: auto;
-        border-radius: 25%;
-        border: none;
-        font-size: 1.5rem;
-        background-color: #a9adad;
-        cursor: pointer;
-    }
-}
-
-@media (max-aspect-ratio: 4/8) {
-    .number_btn {
-        display: inline-block;
-        width: calc(11vh - 0.5rem);
-        height: calc(11vh - 0.5rem);
-        margin: auto;
-        border-radius: 25%;
-        border: none;
-        font-size: 1.5rem;
-        background-color: #a9adad;
-        cursor: pointer;
-    }
-}
-
-@media (max-width: 320px) {
-    .number_btn {
-        display: inline-block;
-        width: calc(12vh - 0.5rem);
-        height: calc(12vh - 0.5rem);
-        margin: auto;
-        border-radius: 25%;
-        border: none;
-        font-size: 1.5rem;
-        background-color: #a9adad;
-        cursor: pointer;
-    }
 }

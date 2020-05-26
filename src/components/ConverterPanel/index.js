@@ -2,7 +2,7 @@ import React from 'react'
 import './styles.css'
 import CurrencySelect from '../CurrencySelect'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faExchangeAlt } from '@fortawesome/free-solid-svg-icons'
+import { faSync } from '@fortawesome/free-solid-svg-icons'
 import ConverterBtn from '../ConvertBtn'
 
 const ConverterPanel = (props) => {
@@ -21,7 +21,7 @@ const ConverterPanel = (props) => {
                 <CurrencySelect type='base' baseCurrencySetter={props.baseCurrencySetter} baseCurrencyGetter={props.baseCurrencyGetter} exchangeCurrencySetter={props.exchangeCurrencySetter} exchangeCurrencyGetter={props.exchangeCurrencyGetter} rateSetter={props.rateSetter} rateGetter={props.rateGetter} />
             </div>
             <div className='exchange_icon'>
-                <FontAwesomeIcon onClick={invertConversion} style={{ 'cursor': 'pointer' }} icon={faExchangeAlt} />
+                <FontAwesomeIcon onClick={invertConversion} style={{ 'cursor': 'pointer' }} size='2x' icon={faSync} />
             </div>
             <div className='exchange_currency'>
                 <CurrencySelect type='exchange' baseCurrencySetter={props.baseCurrencySetter} baseCurrencyGetter={props.baseCurrencyGetter} exchangeCurrencySetter={props.exchangeCurrencySetter} exchangeCurrencyGetter={props.exchangeCurrencyGetter} rateSetter={props.rateSetter} rateGetter={props.rateGetter} />
