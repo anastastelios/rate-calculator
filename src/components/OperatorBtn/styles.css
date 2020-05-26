@@ -39,3 +39,16 @@
     box-shadow: none;
     outline: none;
 }
+
+@media (max-height: 450px) and (orientation: landscape) {
+    .operator_btn {
+        width: 45%;
+        height: 15%;
+        font-size: 0.9rem;
+    }
+    .cancel_btn {
+        width: 45%;
+        height: 15%;
+        font-size: 0.9rem;
+    }
+}

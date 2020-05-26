@@ -21,3 +21,11 @@
     background-color: #5ebdb6;
     outline: none;
 }
+
+@media (max-height: 450px) and (orientation: landscape) {
+    .number_btn {
+        width: 27%;
+        height: 21%;
+        font-size: 1rem;
+    }
+}

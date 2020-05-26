@@ -34,3 +34,21 @@
         align-items: flex-end;
     }
 }
+
+@media (max-height: 450px) and (orientation: landscape) {
+    .calculator_container {
+        display: flex;
+        flex-direction: column;
+        height: 98vh;
+        width: 65vw;
+        border: 1px solid black;
+        margin: auto;
+        margin-top: 1vh;
+        background-color: #ffffff;
+    }
+    .panels_container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+}

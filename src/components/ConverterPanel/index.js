@@ -10,7 +10,7 @@ const ConverterPanel = (props) => {
     const invertConversion = () => {
         const inversion = (a, b) => {
             props.exchangeCurrencySetter(a);
-            props.baseCurrencySetter(b)
+            props.baseCurrencySetter(b);
         }
         inversion(props.baseCurrencyGetter, props.exchangeCurrencyGetter);
     }
