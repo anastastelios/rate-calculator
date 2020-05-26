@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './styles.css'
 import NumbersPanel from '../NumbersPanel'
 import Title from '../Title'
@@ -7,34 +7,16 @@ import OperatorsPanel from '../OperatorsPanel'
 import ConverterPanel from '../ConverterPanel'
 
 
-const Calculator = () => {
-    const setInRate = () => {
-        fetch(`https://api.exchangeratesapi.io/latest?base=${baseCurrency}`)
-            .then(response => response.json())
-            .then(data => {
-                const rate = data.rates[`${exchangeCurrency}`]
-                setRate(baseCurrency === exchangeCurrency ? 1 : rate)
-                return rate
-            })
-    }
-
-    const [calculation, setCalculation] = useState('0');
-    const [prevNumber, setPrevNumber] = useState('0');
-    const [curNumber, setCurNumber] = useState('');
-    const [lastOperator, setLastOperator] = useState('');
-    const [lastBtn, setLastBtn] = useState('');
-    const [baseCurrency, setBaseCurrency] = useState('EUR');
-    const [exchangeCurrency, setExchangeCurrency] = useState('USD');
-    const [rate, setRate] = useState(setInRate());
+const Calculator = (props) => {
 
     return (
-        <div className='calculator_container'>
+        <div className='calculator_container' >
             <Title />
-            <Screen show={calculation} />
-            <ConverterPanel rateGetter={rate} rateSetter={setRate} changeCalculation={setCalculation} baseCurrencySetter={setBaseCurrency} baseCurrencyGetter={baseCurrency} exchangeCurrencySetter={setExchangeCurrency} exchangeCurrencyGetter={exchangeCurrency} />
+            <Screen show={props.calculation} />
+            <ConverterPanel rateGetter={props.rate} rateSetter={props.setRate} changeCalculation={props.setCalculation} baseCurrencySetter={props.setBaseCurrency} baseCurrencyGetter={props.baseCurrency} exchangeCurrencySetter={props.setExchangeCurrency} exchangeCurrencyGetter={props.exchangeCurrency} />
             <div className='panels_container'>
-                <NumbersPanel changeCalculation={setCalculation} operatorGetter={lastOperator} curNumberGetter={curNumber} curNumberSetter={setCurNumber} prevNumberGetter={prevNumber} prevNumberSetter={setPrevNumber} lastBtnGetter={lastBtn} lastBtnSetter={setLastBtn} operatorSetter={setLastOperator} />
-                <OperatorsPanel changeCalculation={setCalculation} prevNumberSetter={setPrevNumber} prevNumberGetter={prevNumber} operatorSetter={setLastOperator} operatorGetter={lastOperator} curNumberSetter={setCurNumber} curNumberGetter={curNumber} lastBtnSetter={setLastBtn} lastBtnGetter={lastBtn} />
+                <NumbersPanel changeCalculation={props.setCalculation} operatorGetter={props.lastOperator} curNumberGetter={props.curNumber} curNumberSetter={props.setCurNumber} prevNumberGetter={props.prevNumber} prevNumberSetter={props.setPrevNumber} lastBtnGetter={props.lastBtn} lastBtnSetter={props.setLastBtn} operatorSetter={props.setLastOperator} />
+                <OperatorsPanel changeCalculation={props.setCalculation} prevNumberSetter={props.setPrevNumber} prevNumberGetter={props.prevNumber} operatorSetter={props.setLastOperator} operatorGetter={props.lastOperator} curNumberSetter={props.setCurNumber} curNumberGetter={props.curNumber} lastBtnSetter={props.setLastBtn} lastBtnGetter={props.lastBtn} />
             </div>
         </div>
     )
