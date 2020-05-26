@@ -9,7 +9,7 @@ function App() {
       .then(response => response.json())
       .then(data => {
         const rate = data.rates[`${exchangeCurrency}`]
-        setRate(rate)
+        setRate(baseCurrency === exchangeCurrency ? '1' : rate)
         return rate
       })
   }
@@ -52,6 +52,7 @@ function App() {
   }
 
   const updateCalcFromKey = (e) => {
+    console.log(e.keyCode)
     e.persist();
     setCalculation(prevState => {
       if (e.keyCode === 187 && e.shiftKey || e.keyCode === 107) {
@@ -80,7 +81,7 @@ function App() {
         setPrevNumber('0')
         setLastOperator('')
         return setCalculation('0')
-      } else if (e.keyCode === 32) {
+      } else if (e.keyCode === 13) {
         if (lastOperator === "") {
           return setCalculation(prevState => {
             setPrevNumber(prevState);
