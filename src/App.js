@@ -52,7 +52,6 @@ function App() {
   }
 
   const updateCalcFromKey = (e) => {
-    console.log(e.keyCode)
     e.persist();
     setCalculation(prevState => {
       if (e.keyCode === 187 && e.shiftKey || e.keyCode === 107) {
