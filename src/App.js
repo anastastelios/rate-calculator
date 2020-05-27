@@ -89,7 +89,7 @@ function App() {
             return prevState;
           })
         } else if (lastOperator === '=') {
-          setLastBtn('O');
+          setLastBtn('Ε');
           return setCalculation(prevState => prevState);
         } else {
           return setCalculation(prevState => {
@@ -97,7 +97,7 @@ function App() {
             setPrevNumber(curNumber)
             setCurNumber(newState)
             setLastOperator('=');
-            setLastBtn('O');
+            setLastBtn('Ε');
             return newState
           })
         }

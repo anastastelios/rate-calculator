@@ -12,7 +12,7 @@ const NumberBtn = (props) => {
 
     const handleClick = (e) => {
         if (e.target.value === '=') {
-            props.lastBtnSetter('O');
+            props.lastBtnSetter('Ε');
             if (props.operatorGetter === "") {
                 return props.handleCalculation(prevState => {
                     props.prevNumberSetter(prevState);
@@ -34,8 +34,8 @@ const NumberBtn = (props) => {
 
         } else {
             props.handleCalculation(prevState => {
-                props.lastBtnSetter('N');
                 if (props.operatorGetter === '') {
+                    props.lastBtnSetter('N');
                     if (prevState === '0') {
                         return e.target.value;
                     } else if (prevState.split('').length > 15) {
@@ -50,10 +50,12 @@ const NumberBtn = (props) => {
                         return prevState + e.target.value;
                     }
                 } else if (props.lastBtnGetter === 'O') {
+                    props.lastBtnSetter('N');
                     return e.target.value;
                 } else if (prevState.split('').length > 15) {
                     return prevState;
                 } else {
+                    props.lastBtnSetter('N');
                     return prevState + e.target.value;
                 }
             })
