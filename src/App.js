@@ -73,7 +73,7 @@ function App() {
         setLastOperator('/')
         setLastBtn('O');
         return prevState
-      } else if (e.keyCode === 8) {
+      } else if (e.keyCode === 46) {
         setLastBtn('O');
         setCurNumber('0')
         setPrevNumber('0')
