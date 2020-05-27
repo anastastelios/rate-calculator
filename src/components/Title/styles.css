@@ -1,21 +1,9 @@
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background-color: #337974;
     color: white;
     padding: 0.3rem;
     margin-bottom: 0.5rem;
-}
-
-@media (min-aspect-ratio: 9/9) and (orientation: landscape) {
-    h2 {
-        font-size: 1.2rem;
-    }
-}
-
-@media (orientation: portrait) {
-    h2 {
-        font-size: 1.2rem;
-    }
 }
 
 @media (min-width: 750px) and (orientation: portrait) {
