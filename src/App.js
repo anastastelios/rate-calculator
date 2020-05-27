@@ -17,7 +17,6 @@ function App() {
   const [calculation, setCalculation] = useState('0');
   const [lastOperator, setLastOperator] = useState('');
   const [lastBtn, setLastBtn] = useState('');
-
   const [prevNumber, setPrevNumber] = useState('0');
   const [curNumber, setCurNumber] = useState('');
   const [baseCurrency, setBaseCurrency] = useState('EUR');
