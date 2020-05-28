@@ -31,6 +31,13 @@
     }
 }
 
+@media (min-width: 657px) and (max-width: 780px) and (min-height: 615px) {
+    .calculator_container {
+        height: 98vh;
+        margin-top: 1vh;
+    }
+}
+
 @media (orientation:portrait) {
     .calculator_container {
         height: 98vh;
