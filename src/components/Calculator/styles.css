@@ -17,20 +17,20 @@
     align-items: flex-end;
 }
 
-@media (min-aspect-ratio: 9/9) and (orientation: landscape) {
-    .calculator_container {
-        height: 96vh;
-        width: 58vh;
-        margin-top: 1vh;
-        padding-bottom: 1vh;
-    }
-}
-
-@media (min-aspect-ratio: 13/9) and (orientation: landscape) and (min-height: 725px) {
+@media (min-aspect-ratio: 12/9) and (orientation: landscape) and (min-height: 620px) {
     .calculator_container {
         height: 82vh;
         width: 58vh;
         margin-top: 9vh;
+        padding-bottom: 1vh;
+    }
+}
+
+@media (min-aspect-ratio: 12/9)and (orientation: landscape) and (max-height: 620px) {
+    .calculator_container {
+        height: 95vh;
+        width: 58vh;
+        margin-top: 2vh;
         padding-bottom: 1vh;
     }
 }
