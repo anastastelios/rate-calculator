@@ -10,9 +10,9 @@
     padding: 0.5rem;
 }
 
-@media (min-aspect-ratio: 12/9) and (orientation: landscape) and (min-height: 725px) {
+@media (min-aspect-ratio: 11/9) and (orientation: landscape) and (min-height: 620px) {
     .screen {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         padding: 0.5rem;
     }
 }
